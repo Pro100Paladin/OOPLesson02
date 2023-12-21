@@ -23,4 +23,18 @@ public class VeterinaryClinic {
     public List<Animal> getPatients() {
         return patients;
     }
+
+    private List<Workers> Workers = new ArrayList<>();
+    public void addWorkers(Workers workers){
+        Workers.add(workers);
+    }
+    public void addWorkers(Workers ... workers){
+        Collections.addAll(Workers, workers);
+    }
+
+    public List<Workers> getWorkers(){
+        return Workers;
+    }
+
+
 }

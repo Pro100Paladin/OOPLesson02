@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.util.List;
 
-public abstract class Animal {
+public abstract class Animal extends VeterinaryClinic {
     protected String name;
     protected LocalDate birthDate;
     protected List<String> vaccination;
@@ -57,7 +57,6 @@ public abstract class Animal {
         System.out.println("Animal sleeping");
     }
 
-//    public abstract void lifeCircle();
 
 
 

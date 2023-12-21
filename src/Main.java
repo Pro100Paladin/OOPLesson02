@@ -21,5 +21,16 @@ public class Main {
         System.out.println(clinic.getPatients());
         System.out.println(clinic.getGoables());
 
+
+        Doctor doctor = new Doctor("Ben", "Ivanov", LocalDate.of(1987, 12, 24), "Hirurg", "Masha");
+        Nurse nurse = new Nurse("Masha", "Petrova", LocalDate.of(2001, 1, 12));
+        clinic.addWorkers(doctor, nurse);
+        System.out.println(clinic.getWorkers());
+        System.out.println(doctor + "Working hours " + Workable.duration + "\n" + "dinner " + doctor.dinner());
+//        System.out.println(doctor.dinner());
+        System.out.println(nurse + "Working hours " + nurse.duration + "\n" + "dinner " + nurse.dinner());
+
+
+
     }
 }
