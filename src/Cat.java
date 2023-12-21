@@ -18,4 +18,5 @@ public class Cat extends Animal implements Goable{
         return 10.0;
     }
 
+
 }

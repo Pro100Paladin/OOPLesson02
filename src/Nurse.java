@@ -1,8 +1,8 @@
 import java.time.LocalDate;
 
 public class Nurse extends Workers implements Workable{
-    public Nurse(String name, String lastName, LocalDate dateOfBirth) {
-        super(name, lastName, dateOfBirth);
+    public Nurse(String nurseName, String lastName, LocalDate dateOfBirth) {
+        super(nurseName, lastName, dateOfBirth);
 
     }
 
@@ -16,5 +16,10 @@ public class Nurse extends Workers implements Workable{
     @Override
     public String dinner() {
         return "12.00 - 13:00";
+    }
+
+    @Override
+    public String examinesThePatient() {
+        return null;
     }
 }

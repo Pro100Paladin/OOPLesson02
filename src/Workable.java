@@ -3,6 +3,8 @@ public interface Workable {
 
     String dinner();
 
+    String examinesThePatient();
+
 
 
     long endTime = 16;
