@@ -22,4 +22,14 @@ public class Nurse extends Workers implements Workable{
     public String examinesThePatient() {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Nurse{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", specialization='" + specialization + '\'' +
+                '}';
+    }
 }

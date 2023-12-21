@@ -26,8 +26,7 @@ public class Main {
         Nurse nurse = new Nurse("Masha", "Petrova", LocalDate.of(2001, 1, 12));
         clinic.addWorkers(doctor, nurse);
         System.out.println(clinic.getWorkers());
-        System.out.println(doctor + "Working hours " + Workable.duration + "\n" + "dinner " + doctor.dinner());
-//        System.out.println(doctor.dinner());
+        System.out.println(doctor + "Working hours " + doctor.duration + "\n" + "dinner " + doctor.dinner());
         System.out.println(nurse + "Working hours " + nurse.duration + "\n" + "dinner " + nurse.dinner());
 
 
